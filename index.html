@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/sty.css">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <!-- integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <title>TODO</title>
+</head>
+
+<body class="light">
+    <div class="container">
+
+        <div class="header">
+            <div class="date"></div>
+            <div class="theme-switch">
+                <!-- <h1>Theme</h1> -->
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.13 37.32"
+                    style="height: 2.2rem; box-sizing: content-box;">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: rgba(255, 255, 255, 0.945);
+                                transition: all 0.28s ease;
+                            }
+
+                            
+
+                            .cls-2 {
+                                fill: var(--primary-color);
+                            }
+                        </style>
+                    </defs>
+                    <title>Switch theme</title>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <path class='cls-2'
+                                d="M56.68,37.17H22C10.16,38.61.07,29.34,0,18.78S10.06-1.3,22,.15H56.68c11.6-1.28,21.52,8,21.45,18.63S68.18,38.44,56.68,37.17Z" />
+                            <circle class="cls-1" cx="19.58" cy="18.66" r="14.82" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <form id="task-form">
+            <div class="input-field">
+                <input type="text" name="task" id="task" placeholder="just do it...">
+            </div>
+            <input type="submit" value="add task" class="btn new-btn">
+        </form>
+        <div class="todo-card">
+            <h1 id="heading"></h1>
+            <div class="todo-list"></div>
+
+            <div class="clear">
+                <a class="clear-tasks btn" href="#"><i class="fa fa-trash-o"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <script defer src="./app.js"></script>
+</body>
+
+</html>
